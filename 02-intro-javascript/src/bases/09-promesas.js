@@ -3,7 +3,7 @@
 import { getHeroById } from "../bases/08-imp-exp";
 
 /* En la pila de ejecucion de JS hasta que no acabe de ejecutar
-todas las tareas asincronas, se pasara con las tareas asincronas 
+todas las tareas sincronas, se pasara con las tareas asincronas 
 como son las promesas */
 
 // const promesa = new Promise((resolve, reject) => {
