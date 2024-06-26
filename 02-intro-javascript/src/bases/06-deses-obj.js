@@ -35,6 +35,9 @@ const getPersona = ({ nombre, edad, rango = 'Programador' }) => {
     }
 }
 
-const { nombreClave, anios, latlng: { lat, lng } } = getPersona(persona);
+const { nombreClave, anios, latlng } = getPersona(persona);
+
+//O se puede hacer de la siguiente manera
+// const { lat, lng } = latlng;
 
 console.log(anios, nombreClave, lat, lng)
