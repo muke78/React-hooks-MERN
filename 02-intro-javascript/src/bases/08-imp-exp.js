@@ -1,8 +1,5 @@
 //Importacioners en JS
 
-
-
-
 /** Cuando la importacion es por defecto no necesita las llaves, pero 
 cuando no es por defecto se le pone llaves para acceder a el nombre que lleva*/
 import heroes, { owner } from "../data/heroes";
