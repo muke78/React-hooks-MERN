@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HelloWorldApp } from "./index";
+import {HelloWorldApp} from "./HelloWorldApp"
 import './style.css'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
