@@ -1,4 +1,4 @@
-export const usContext = ({ clave, nombre, edad, latlng: { lat, lng } }) => {
+export const usContext = ({ clave, nombre, edad,  lat, lng }) => {
   // console.log( nombre, edad, rango );
 
   return {
