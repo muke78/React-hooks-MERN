@@ -23,8 +23,8 @@ FirstApp.propTypes = {
  * (compatibilidad con defaultProps se eliminará de los componentes 
  * de funciones en una versión importante futura.) */
 
-FirstApp.defaultProps = {
-  title: "No hay ningun titulo",
-  subtitle: "No hay subtitulo",
-  name: "Erick Gonzalez",
-};
+// FirstApp.defaultProps = {
+//   name: "Erick Gonzalez",
+//   subtitle: "No hay subtitulo",
+//   // title: "No hay ningun titulo",
+// };
