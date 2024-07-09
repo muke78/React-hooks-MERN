@@ -1,4 +1,4 @@
 import { CounterApp } from "./CounterApp";
-export const HelloWorldApp = () => {
+export const CounterAppTemplate = () => {
   return <CounterApp value={ 0 } />;
 };
