@@ -47,7 +47,7 @@ GifGrid.propTypes = {
 
 
 /**
- * Al padara las props de un componente padre a uno hijo
+ * Al pasar las props de un componente padre a uno hijo
  * se puede pasar por medio del operador spread para poder 
  * mandarle una copia exacta a todo lo que se renderice en
  * el hijo
