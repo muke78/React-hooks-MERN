@@ -1,5 +1,5 @@
 export const getGifts = async (category) => {
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=UA0bdMBqNmOtyJAHldvAQqf3RiO515QK&q=${category}&limit=10`;
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=OppcFRgG8ncSpT1SZ2UNPVT5OGf0XMYq&q=${category}&limit=10`;
   const resp = await fetch(url);
   const { data } = await resp.json();
 
