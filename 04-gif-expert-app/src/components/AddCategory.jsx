@@ -10,13 +10,13 @@ export const AddCategory = ({ onNewCategory }) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if (inputValue.trim().length <= 1) return;
-        onNewCategory(inputValue.trim())
+        // if (inputValue.trim().length <= 1) return;
         setInputValue("");
+        onNewCategory(inputValue.trim())
     };
 
     return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} aria-label="form">
             <input
                 type="text"
                 placeholder="Buscar gifts"
@@ -31,6 +31,6 @@ export const AddCategory = ({ onNewCategory }) => {
 
 
 AddCategory.propTypes = {
-    onNewCategory: PropTypes.func
+    onNewCategory: PropTypes.func.isRequired,
 }
 
