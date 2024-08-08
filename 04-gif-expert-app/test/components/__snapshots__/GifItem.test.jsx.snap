@@ -10,9 +10,7 @@ exports[`Pruebas en <GifItem/> Debe de hacer la prueba del snapshot 1`] = `
       src="https://www.google.es/"
     />
     <p>
-       
       Link de google
-       
     </p>
   </div>
 </div>
