@@ -1,8 +1,9 @@
+import { LoadingMessage } from "../03-examples/LoadingMessage";
+import { PokemonCard } from "../03-examples/PokemonCard";
 import { useCounter, useFetch } from "../hooks";
-import { LoadingMessage } from "./LoadingMessage";
-import { PokemonCard } from "./PokemonCard";
 
-export const MultipleCustomHook = () => {
+
+export const Layout = () => {
     const { counter, decrement, increment } = useCounter(1);
 
     const { data, hasError, isLoading } = useFetch(
