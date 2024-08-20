@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useCounter } from '../hooks'
 
 const heavyStuff = (iterationNumber = 100) => {
@@ -24,7 +24,7 @@ export const MemoHook = () => {
 
             <h4> {memorizedValue} </h4>
 
-            <button className='btn btn-primary' onClick={() => { increment() }}>+1</button>
+            <button className='btn btn-primary' onClick={ increment }>+1</button>
             <button className='btn btn-outline-primary' onClick={() => { setShow(!show) }}>Show/Hide {JSON.stringify(show)} </button>
         </>
     )

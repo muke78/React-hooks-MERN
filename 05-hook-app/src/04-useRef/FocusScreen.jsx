@@ -1,4 +1,4 @@
-import React, { useRef, use} from "react";
+import React, { useRef } from "react";
 
 export const FocusScreen = () => {
 
