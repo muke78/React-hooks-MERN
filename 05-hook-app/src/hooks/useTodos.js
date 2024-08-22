@@ -17,7 +17,14 @@ export const useTodos = () => {
       type: "[TODO] Add Todo",
       payload: newTodo,
     };
+    dispatch(action);
+  };
 
+  const onEditTodo = (description) => {
+    const action = {
+      type: "[TODO] Edit Todo",
+      payload: description,
+    };
     dispatch(action);
   };
 
@@ -40,6 +47,7 @@ export const useTodos = () => {
     todosCount: todos.length,
     todosPendientes: todos.filter((obser) => !obser.done).length,
     onNewTodo,
+    onEditTodo,
     handleDeleteTodo,
     handleToggleTodo,
   };

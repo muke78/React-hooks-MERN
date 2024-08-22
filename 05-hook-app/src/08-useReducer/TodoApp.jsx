@@ -7,6 +7,7 @@ export const TodoApp = () => {
     todos,
     todosCount,
     onNewTodo,
+    onEditTodo,
     handleDeleteTodo,
     handleToggleTodo,
     todosPendientes,
@@ -21,18 +22,19 @@ export const TodoApp = () => {
       </h1>
       <hr />
       <div className="row">
-        <div className="col-7">
-          <TodoList
-            todos={todos}
-            onDeleteTodo={handleDeleteTodo}
-            onToggleTodo={handleToggleTodo}
-          />
-        </div>
-        <div className="col-5">
+        <div className="col-12 col-md-5">
           <h4>Agregar TODO</h4>
           <hr />
 
           <TodoAdd onNewTodo={onNewTodo} />
+        </div>
+        <div className="col-12 col-md-7">
+          <TodoList
+            todos={todos}
+            onEditTodo={onEditTodo}
+            onDeleteTodo={handleDeleteTodo}
+            onToggleTodo={handleToggleTodo}
+          />
         </div>
       </div>
     </>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useForm } from "../../hooks/useForm";
 
 export const TodoAdd = ({ onNewTodo }) => {
@@ -30,7 +29,7 @@ export const TodoAdd = ({ onNewTodo }) => {
         value={description}
         onChange={onInputChange}
       />
-      <button type="submit" className="btn btn-outline-primary mt-1">
+      <button type="submit" className="btn btn-outline-primary mt-2 mb-2">
         Agregar
       </button>
     </form>

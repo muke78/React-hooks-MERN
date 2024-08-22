@@ -1,11 +1,21 @@
-import { useEffect } from "react";
 import { TodoItem } from "./TodoItem";
 
-export const TodoList = ({ todos = [], onDeleteTodo, onToggleTodo}) => {
+export const TodoList = ({
+  todos = [],
+  onEditTodo,
+  onDeleteTodo,
+  onToggleTodo,
+}) => {
   return (
     <ul className="list-group">
       {todos.map((todo) => (
-        <TodoItem key={todo.id} item={todo} onDeleteTodo={onDeleteTodo} onToggleTodo={onToggleTodo}/>
+        <TodoItem
+          key={todo.id}
+          item={todo}
+          onEditTodo={onEditTodo}
+          onDeleteTodo={onDeleteTodo}
+          onToggleTodo={onToggleTodo}
+        />
       ))}
     </ul>
   );
