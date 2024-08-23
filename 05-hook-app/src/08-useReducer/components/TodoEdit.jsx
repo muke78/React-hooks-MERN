@@ -7,13 +7,12 @@ export const TodoEdit = ({ item, setIsLoading, onEditTodo }) => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-
+    if (descripcionEditar.length <= 0) return;
     const editTodo = {
       id: item.id,
       done: item.done,
       description: descripcionEditar,
     };
-    // console.log(editTodo)
     onEditTodo(editTodo);
     setIsLoading(true);
     onResetForm();
@@ -25,6 +24,7 @@ export const TodoEdit = ({ item, setIsLoading, onEditTodo }) => {
         <input
           type="text"
           autoFocus
+          required={true}
           placeholder="Editemos algo"
           className="form-control w-100"
           name="descripcionEditar"
