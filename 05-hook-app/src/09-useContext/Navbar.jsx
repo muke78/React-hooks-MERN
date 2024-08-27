@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import { dataNavbar } from "./utils/dataNavbar";
 
 export const Navbar = () => {
   return (
@@ -9,31 +10,16 @@ export const Navbar = () => {
         </Link>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <NavLink
-              className={({ isActive }) =>
-                `nav-link ${isActive ? "active" : ""}`
-              }
-              to="/"
-            >
-              Home
-            </NavLink>
-
-            <NavLink
-              className={({ isActive }) =>
-                `nav-link ${isActive ? "active" : ""}`
-              }
-              to="/about"
-            >
-              About
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                `nav-link ${isActive ? "active" : ""}`
-              }
-              to="/login"
-            >
-              Login
-            </NavLink>
+            {dataNavbar.map((item) => (
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                to={item.to}
+              >
+                {item.label}
+              </NavLink>
+            ))}
           </ul>
         </div>
       </div>
