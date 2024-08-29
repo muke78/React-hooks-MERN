@@ -16,6 +16,7 @@ export const Navbar = () => {
                   `nav-link ${isActive ? "active" : ""}`
                 }
                 to={item.to}
+                key={item.label}
               >
                 {item.label}
               </NavLink>

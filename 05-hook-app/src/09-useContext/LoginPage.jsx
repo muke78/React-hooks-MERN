@@ -6,7 +6,7 @@ export const LoginPage = () => {
 
   return (
     <>
-      <h1>Login Page</h1>
+      <h1>LoginPage</h1>
       <hr />
 
       <pre aria-label="preLogin">{JSON.stringify(user, null, 3)}</pre>
