@@ -27,6 +27,7 @@ export const todoReducer = (initialState = [], action) => {
         }
         return todo;
       });
+      
     default:
       return initialState;
   }

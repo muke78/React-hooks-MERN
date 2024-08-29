@@ -13,6 +13,7 @@ export const TodoItem = ({ item, onEditTodo, onDeleteTodo, onToggleTodo }) => {
           }`}
           role="button"
           onClick={() => onToggleTodo(item.id)}
+          aria-label="span"
         >
           {item.description}
         </span>
@@ -28,12 +29,14 @@ export const TodoItem = ({ item, onEditTodo, onDeleteTodo, onToggleTodo }) => {
         <button
           className="btn btn-primary me-2"
           onClick={() => setIsLoading(!isLoading)}
+          aria-label="buttonEdit"
         >
           Editar
         </button>
         <button
           className="btn btn-danger right"
           onClick={() => onDeleteTodo(item.id)}
+          aria-label="buttonDelete"
         >
           Borrar
         </button>
